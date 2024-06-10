@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			width: 90%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+			border-radius: 25px;
+			margin-bottom: 20px;
+		}
+
+		body {
+			background: linear-gradient(45deg, #3f87a6, #ebf8e1, #f69d3c);
+			background-size: 600% 600%;
+			animation: gradient 16s ease infinite;
+			font-family: 'Arial', sans-serif;
+			height: 100vh;
+			margin: 0;
+			color: #ffffff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.button {
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			text-transform: none;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		#canvas {
+			background-color: #FFF;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+			border-radius: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="menu">
+		<div class="button">画板</div>
+		<div class="button" id="clear">重置</div>
+		<div class="button" id="save">保存</div>
+	</div>
+	<canvas id="canvas" width="600" height="500"></canvas>
+	<script src="./example.js"></script>
+</body>
+
+</html>
